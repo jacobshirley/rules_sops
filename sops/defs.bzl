@@ -1,5 +1,9 @@
 "Public API re-exports"
 
-def example():
-    """This is an example"""
-    pass
+def encrypt(name, **kwargs):
+    native.genrule(
+        name = name,
+        cmd = "$(sops_BIN) --help",
+        outs = [name + ".out"],
+        toolchains = ["@rules_sops//sops:resolved_toolchain"]
+    )

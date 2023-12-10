@@ -1,5 +1,7 @@
 load("@bazel_gazelle//:def.bzl", "gazelle", "gazelle_binary")
 
+package(default_visibility = ["//visibility:public"])
+
 gazelle_binary(
     name = "gazelle_bin",
     languages = ["@bazel_skylib_gazelle_plugin//bzl"],
