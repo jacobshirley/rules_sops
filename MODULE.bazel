@@ -20,4 +20,3 @@ sops.toolchain(sops_version = "3.8.1")
 use_repo(sops, "sops_toolchains")
 
 register_toolchains("@sops_toolchains//:all")
-

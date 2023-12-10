@@ -17,4 +17,8 @@ local_repository(
 load("@rules_sops//sops:repositories.bzl", "rules_sops_dependencies", "sops_register_toolchains")
 
 rules_sops_dependencies()
-sops_register_toolchains(name = "sops", sops_version = "3.8.1")
+
+sops_register_toolchains(
+    name = "sops",
+    sops_version = "3.8.1",
+)

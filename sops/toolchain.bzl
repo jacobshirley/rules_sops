@@ -40,7 +40,7 @@ def _sops_toolchain_impl(ctx):
         files = depset(tool_files),
         runfiles = ctx.runfiles(files = tool_files),
     )
-    sopsInfo = SopsInfo(
+    sops_info = SopsInfo(
         target_tool_path = target_tool_path,
         tool_files = tool_files,
     )
@@ -48,7 +48,7 @@ def _sops_toolchain_impl(ctx):
     # Export all the providers inside our ToolchainInfo
     # so the resolved_toolchain rule can grab and re-export them.
     toolchain_info = platform_common.ToolchainInfo(
-        SopsInfo = sopsInfo,
+        SopsInfo = sops_info,
         template_variables = template_variables,
         default = default,
     )
