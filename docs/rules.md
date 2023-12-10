@@ -2,15 +2,21 @@
 
 Public API re-exports
 
-<a id="example"></a>
+<a id="encrypt"></a>
 
-## example
+## encrypt
 
 <pre>
-example()
+encrypt(<a href="#encrypt-name">name</a>)
 </pre>
 
-This is an example
 
+
+**PARAMETERS**
+
+
+| Name  | Description | Default Value |
+| :------------- | :------------- | :------------- |
+| <a id="encrypt-name"></a>name |  <p align="center"> - </p>   |  none |
 
 
