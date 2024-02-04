@@ -22,5 +22,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run tests
-        run: |
-          echo "Hello world"
+        run: bazel test ...
